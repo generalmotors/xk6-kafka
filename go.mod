@@ -6,13 +6,13 @@ toolchain go1.23.1
 
 require (
 	github.com/aws/aws-sdk-go-v2/config v1.27.39
+	github.com/generalmotors/kafka-go v0.1.5
+	github.com/generalmotors/kafka-go/sasl/aws_msk_iam_v2 v0.0.0-20241016174519-7541716505d6
 	github.com/grafana/sobek v0.0.0-20240927094302-19dd311f018f
 	github.com/linkedin/goavro/v2 v2.13.0
 	github.com/pavlo-v-chernykh/keystore-go/v4 v4.5.0
 	github.com/riferrei/srclient v0.7.0
 	github.com/santhosh-tekuri/jsonschema/v5 v5.3.1
-	github.com/segmentio/kafka-go v0.4.47
-	github.com/segmentio/kafka-go/sasl/aws_msk_iam_v2 v0.1.0
 	github.com/sirupsen/logrus v1.9.3
 	github.com/stretchr/testify v1.9.0
 	go.k6.io/k6 v0.54.0

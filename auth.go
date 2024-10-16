@@ -9,11 +9,11 @@ import (
 	"time"
 
 	"github.com/aws/aws-sdk-go-v2/config"
-	kafkago "github.com/segmentio/kafka-go"
-	"github.com/segmentio/kafka-go/sasl"
-	"github.com/segmentio/kafka-go/sasl/aws_msk_iam_v2"
-	"github.com/segmentio/kafka-go/sasl/plain"
-	"github.com/segmentio/kafka-go/sasl/scram"
+	kafkago "github.com/generalmotors/kafka-go"
+	"github.com/generalmotors/kafka-go/sasl"
+	"github.com/generalmotors/kafka-go/sasl/aws_msk_iam_v2"
+	"github.com/generalmotors/kafka-go/sasl/plain"
+	"github.com/generalmotors/kafka-go/sasl/scram"
 )
 
 // TLSVersions is a map of TLS versions to their numeric values.

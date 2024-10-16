@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/segmentio/kafka-go/sasl/plain"
-	"github.com/segmentio/kafka-go/sasl/scram"
+	"github.com/generalmotors/kafka-go/sasl/plain"
+	"github.com/generalmotors/kafka-go/sasl/scram"
 	"github.com/stretchr/testify/assert"
 )
 
