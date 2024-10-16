@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/grafana/sobek"
-	kafkago "github.com/segmentio/kafka-go"
+	kafkago "github.com/generalmotors/kafka-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

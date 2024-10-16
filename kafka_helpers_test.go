@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/grafana/sobek"
-	kafkago "github.com/segmentio/kafka-go"
+	kafkago "github.com/generalmotors/kafka-go"
 	"github.com/stretchr/testify/require"
 	"go.k6.io/k6/js/common"
 	"go.k6.io/k6/js/modulestest"

@@ -6,8 +6,8 @@ import (
 
 	"github.com/grafana/sobek"
 	"github.com/riferrei/srclient"
-	kafkago "github.com/segmentio/kafka-go"
-	"github.com/segmentio/kafka-go/compress"
+	kafkago "github.com/generalmotors/kafka-go"
+	"github.com/generalmotors/kafka-go/compress"
 	"github.com/sirupsen/logrus"
 	"go.k6.io/k6/js/common"
 	"go.k6.io/k6/js/modules"
