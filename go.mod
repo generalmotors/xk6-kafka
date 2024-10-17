@@ -6,13 +6,14 @@ toolchain go1.23.1
 
 require (
 	github.com/aws/aws-sdk-go-v2/config v1.27.39
+	github.com/generalmotors/kafka-go v0.1.5
+	github.com/generalmotors/kafka-go/sasl/aws_msk_iam_v2 v0.0.0-20241016174519-7541716505d6
+	github.com/generalmotors/kafka-go/sasl/azure_event_hubs_entra v0.1.5
 	github.com/grafana/sobek v0.0.0-20240927094302-19dd311f018f
 	github.com/linkedin/goavro/v2 v2.13.0
 	github.com/pavlo-v-chernykh/keystore-go/v4 v4.5.0
 	github.com/riferrei/srclient v0.7.0
 	github.com/santhosh-tekuri/jsonschema/v5 v5.3.1
-	github.com/segmentio/kafka-go v0.4.47
-	github.com/segmentio/kafka-go/sasl/aws_msk_iam_v2 v0.1.0
 	github.com/sirupsen/logrus v1.9.3
 	github.com/stretchr/testify v1.9.0
 	go.k6.io/k6 v0.54.0
@@ -20,6 +21,16 @@ require (
 )
 
 require (
+	github.com/AzureAD/microsoft-authentication-library-for-go v1.2.2 // indirect
+	github.com/golang-jwt/jwt/v5 v5.2.1 // indirect
+	github.com/kylelemons/godebug v1.1.0 // indirect
+	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
+)
+
+require (
+	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.14.0 // indirect
+	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.8.0
+	github.com/Azure/azure-sdk-for-go/sdk/internal v1.10.0 // indirect
 	github.com/aws/aws-sdk-go-v2 v1.31.0 // indirect
 	github.com/aws/aws-sdk-go-v2/credentials v1.17.37 // indirect
 	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.16.14 // indirect

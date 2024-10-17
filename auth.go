@@ -8,12 +8,14 @@ import (
 	"os"
 	"time"
 
+	"github.com/Azure/azure-sdk-for-go/sdk/azidentity"
 	"github.com/aws/aws-sdk-go-v2/config"
-	kafkago "github.com/segmentio/kafka-go"
-	"github.com/segmentio/kafka-go/sasl"
-	"github.com/segmentio/kafka-go/sasl/aws_msk_iam_v2"
-	"github.com/segmentio/kafka-go/sasl/plain"
-	"github.com/segmentio/kafka-go/sasl/scram"
+	kafkago "github.com/generalmotors/kafka-go"
+	"github.com/generalmotors/kafka-go/sasl"
+	"github.com/generalmotors/kafka-go/sasl/aws_msk_iam_v2"
+	"github.com/generalmotors/kafka-go/sasl/azure_event_hubs_entra"
+	"github.com/generalmotors/kafka-go/sasl/plain"
+	"github.com/generalmotors/kafka-go/sasl/scram"
 )
 
 // TLSVersions is a map of TLS versions to their numeric values.
@@ -26,6 +28,7 @@ const (
 	saslScramSha512 = "sasl_scram_sha512"
 	saslSsl         = "sasl_ssl"
 	saslAwsIam      = "sasl_aws_iam"
+	saslAzureEntra  = "sasl_azure_entra"
 
 	Timeout = time.Second * 10
 )
@@ -118,6 +121,18 @@ func GetSASLMechanism(saslConfig SASLConfig) (sasl.Mechanism, *Xk6KafkaError) {
 				failedCreateDialerWithAwsIam, "Unable to load AWS IAM config for AWS MSK", err)
 		}
 		return aws_msk_iam_v2.NewMechanism(cfg), nil
+
+	case saslAzureEntra:
+		// Create Azure Entra Default Credentials
+		cred, err := azidentity.NewDefaultAzureCredential(nil)
+
+		if err != nil {
+			fmt.Printf("failed to create Default Azure Credential: %s", err.Error())
+			os.Exit(1)
+		}
+
+		// Create Azure Entra SASL Mechanism
+		return azure_event_hubs_entra.NewMechanism(cred), nil
 	default:
 		// Should we fail silently?
 		return nil, nil
