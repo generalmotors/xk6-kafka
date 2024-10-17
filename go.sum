@@ -61,8 +61,8 @@ github.com/fsnotify/fsnotify v1.5.4/go.mod h1:OVB6XrOHzAwXMpEM7uPOzcehqUV2UqJxmV
 github.com/generalmotors/kafka-go v0.1.4/go.mod h1:VfsyP3IlkrKY9jV7GvfckBrHbsmp1ZKgDgnMoxae64w=
 github.com/generalmotors/kafka-go v0.1.5 h1:JnrBUyd+Mli9zYK5IAk0zAXyWtr022EFbtI96UhvNLg=
 github.com/generalmotors/kafka-go v0.1.5/go.mod h1:VfsyP3IlkrKY9jV7GvfckBrHbsmp1ZKgDgnMoxae64w=
-github.com/generalmotors/kafka-go/sasl/aws_msk_iam_v2 v0.0.0-20241016174519-7541716505d6 h1:DPjdzUIVmLvb0aYZWrAXnyZmfhjoQWjU6kHhw1fAP70=
-github.com/generalmotors/kafka-go/sasl/aws_msk_iam_v2 v0.0.0-20241016174519-7541716505d6/go.mod h1:1IYRUpqKKC1bZD4oPm7CZBY01MiZTCvHFUoAoy/2Js4=
+github.com/generalmotors/kafka-go/sasl/aws_msk_iam_v2 v0.1.5 h1:xtD7Ixe7LBv9qAKzS9hMoT3KeHCqcNJGDjLp5xF4fPY=
+github.com/generalmotors/kafka-go/sasl/aws_msk_iam_v2 v0.1.5/go.mod h1:1IYRUpqKKC1bZD4oPm7CZBY01MiZTCvHFUoAoy/2Js4=
 github.com/go-logr/logr v1.2.2/go.mod h1:jdQByPbusPIv2/zmleS9BjJVeZ6kBagPoEUsqbVz/1A=
 github.com/go-logr/logr v1.4.2 h1:6pFjapn8bFcIbiKo3XT4j/BhANplGihG6tvd+8rYgrY=
 github.com/go-logr/logr v1.4.2/go.mod h1:9T104GzyrTigFIr8wt5mBrctHMim0Nb2HLGrmQ40KvY=
