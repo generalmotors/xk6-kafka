@@ -7,8 +7,7 @@ toolchain go1.23.1
 require (
 	github.com/aws/aws-sdk-go-v2/config v1.27.39
 	github.com/generalmotors/kafka-go v0.1.5
-	github.com/generalmotors/kafka-go/sasl/aws_msk_iam_v2 v0.0.0-20241016174519-7541716505d6
-	github.com/generalmotors/kafka-go/sasl/azure_event_hubs_entra v0.1.5
+	github.com/generalmotors/kafka-go/sasl/aws_msk_iam_v2 v0.1.5
 	github.com/grafana/sobek v0.0.0-20240927094302-19dd311f018f
 	github.com/linkedin/goavro/v2 v2.13.0
 	github.com/pavlo-v-chernykh/keystore-go/v4 v4.5.0
@@ -49,6 +48,7 @@ require (
 	github.com/dop251/goja v0.0.0-20240927123429-241b342198c2 // indirect
 	github.com/evanw/esbuild v0.24.0 // indirect
 	github.com/fatih/color v1.17.0 // indirect
+	github.com/generalmotors/kafka-go/sasl/azure_event_hubs_entra v0.1.5
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-sourcemap/sourcemap v2.1.4+incompatible // indirect
