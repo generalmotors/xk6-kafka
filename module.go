@@ -4,10 +4,10 @@ import (
 	"crypto/tls"
 	"time"
 
-	"github.com/grafana/sobek"
-	"github.com/riferrei/srclient"
 	kafkago "github.com/generalmotors/kafka-go"
 	"github.com/generalmotors/kafka-go/compress"
+	"github.com/grafana/sobek"
+	"github.com/riferrei/srclient"
 	"github.com/sirupsen/logrus"
 	"go.k6.io/k6/js/common"
 	"go.k6.io/k6/js/modules"
@@ -171,6 +171,7 @@ func (m *Module) defineConstants() {
 	mustAddProp("SASL_SCRAM_SHA512", saslScramSha512)
 	mustAddProp("SASL_SSL", saslSsl)
 	mustAddProp("SASL_AWS_IAM", saslAwsIam)
+	mustAddProp("SASL_AZURE_ENTRA", saslAzureEntra)
 
 	// Compression codecs
 	mustAddProp("CODEC_GZIP", codecGzip)
